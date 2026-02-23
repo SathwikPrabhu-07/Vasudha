@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: vasudha-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:10000
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: EMAIL_ADDRESS
+        sync: false
+      - key: EMAIL_APP_PASSWORD
+        sync: false
+      - key: FIREBASE_CREDENTIALS_JSON
+        sync: false

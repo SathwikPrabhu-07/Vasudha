@@ -1,0 +1,161 @@
+{
+    "tomato": {
+        "avgDays": 75,
+        "minDays": 60,
+        "maxDays": 90,
+        "optimalTempMin": 20,
+        "optimalTempMax": 30,
+        "yieldPerAcre": 80,
+        "unit": "quintals",
+        "staticPriceMin": 1500,
+        "staticPriceMax": 2500,
+        "byproducts": []
+    },
+    "onion": {
+        "avgDays": 120,
+        "minDays": 100,
+        "maxDays": 150,
+        "optimalTempMin": 13,
+        "optimalTempMax": 24,
+        "yieldPerAcre": 100,
+        "unit": "quintals",
+        "staticPriceMin": 1000,
+        "staticPriceMax": 3000,
+        "byproducts": []
+    },
+    "chilli": {
+        "avgDays": 90,
+        "minDays": 75,
+        "maxDays": 120,
+        "optimalTempMin": 20,
+        "optimalTempMax": 35,
+        "yieldPerAcre": 40,
+        "unit": "quintals",
+        "staticPriceMin": 8000,
+        "staticPriceMax": 15000,
+        "byproducts": []
+    },
+    "wheat": {
+        "avgDays": 130,
+        "minDays": 110,
+        "maxDays": 150,
+        "optimalTempMin": 10,
+        "optimalTempMax": 25,
+        "yieldPerAcre": 20,
+        "unit": "quintals",
+        "staticPriceMin": 2200,
+        "staticPriceMax": 3200,
+        "byproducts": []
+    },
+    "rice": {
+        "avgDays": 120,
+        "minDays": 100,
+        "maxDays": 140,
+        "optimalTempMin": 22,
+        "optimalTempMax": 32,
+        "yieldPerAcre": 25,
+        "unit": "quintals",
+        "staticPriceMin": 2800,
+        "staticPriceMax": 3800,
+        "byproducts": [
+            {
+                "name": "Rice Bran",
+                "yieldRatio": 0.08,
+                "priceMultiplier": 0.4
+            },
+            {
+                "name": "Rice Husk",
+                "yieldRatio": 0.2,
+                "priceMultiplier": 0.15
+            }
+        ]
+    },
+    "sugarcane": {
+        "avgDays": 365,
+        "minDays": 300,
+        "maxDays": 420,
+        "optimalTempMin": 20,
+        "optimalTempMax": 35,
+        "yieldPerAcre": 350,
+        "unit": "quintals",
+        "staticPriceMin": 300,
+        "staticPriceMax": 400,
+        "byproducts": [
+            {
+                "name": "Bagasse",
+                "yieldRatio": 0.3,
+                "priceMultiplier": 0.2
+            },
+            {
+                "name": "Molasses",
+                "yieldRatio": 0.04,
+                "priceMultiplier": 1.5
+            }
+        ]
+    },
+    "turmeric": {
+        "avgDays": 240,
+        "minDays": 210,
+        "maxDays": 270,
+        "optimalTempMin": 20,
+        "optimalTempMax": 30,
+        "yieldPerAcre": 25,
+        "unit": "quintals",
+        "staticPriceMin": 10000,
+        "staticPriceMax": 15000,
+        "byproducts": []
+    },
+    "soybean": {
+        "avgDays": 100,
+        "minDays": 85,
+        "maxDays": 120,
+        "optimalTempMin": 20,
+        "optimalTempMax": 30,
+        "yieldPerAcre": 12,
+        "unit": "quintals",
+        "staticPriceMin": 3800,
+        "staticPriceMax": 5000,
+        "byproducts": []
+    },
+    "cotton": {
+        "avgDays": 160,
+        "minDays": 140,
+        "maxDays": 180,
+        "optimalTempMin": 21,
+        "optimalTempMax": 35,
+        "yieldPerAcre": 8,
+        "unit": "quintals",
+        "staticPriceMin": 5500,
+        "staticPriceMax": 7000,
+        "byproducts": [
+            {
+                "name": "Cotton Seed",
+                "yieldRatio": 0.6,
+                "priceMultiplier": 0.35
+            }
+        ]
+    },
+    "coconut": {
+        "avgDays": 180,
+        "minDays": 150,
+        "maxDays": 210,
+        "optimalTempMin": 20,
+        "optimalTempMax": 35,
+        "yieldPerAcre": 50,
+        "unit": "quintals",
+        "staticPriceMin": 2500,
+        "staticPriceMax": 4000,
+        "byproducts": [
+            {
+                "name": "Coconut Husk",
+                "yieldRatio": 0.3,
+                "priceMultiplier": 0.5
+            },
+            {
+                "name": "Coconut Shell",
+                "yieldRatio": 0.15,
+                "priceMultiplier": 0.7
+            }
+        ]
+    }
+}

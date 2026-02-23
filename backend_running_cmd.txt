@@ -1,0 +1,4 @@
+farmer-sndjdj
+buyer-sp07
+logistics-sp290507
+python -m uvicorn main:app --reload --port 8000
