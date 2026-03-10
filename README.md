@@ -1,491 +1,504 @@
-🌱 Vasudha
-ML-Powered Pre-Harvest Agricultural Supply Chain Platform
+# 🌱 Vasudha
 
-Turning farming from uncertain selling into predictable planning.
+### ML-Powered Pre-Harvest Agricultural Supply Chain Platform
 
-Vasudha is a full-stack agricultural coordination platform that enables farmers, buyers, and logistics providers to coordinate before harvest, reducing market uncertainty and post-harvest waste.
+> Turning farming from **uncertain selling** into **predictable planning**.
 
-The platform combines machine learning, supply chain workflows, and multilingual accessibility to create a predictable digital ecosystem for perishable crops.
+Vasudha is a full-stack agricultural coordination platform that helps farmers, buyers, and logistics providers coordinate **before harvest**, reducing price uncertainty, post-harvest waste, and distress selling.
 
-🚨 The Problem
+The platform combines **machine learning, supply chain workflows, and multilingual accessibility** to create a predictable digital ecosystem for perishable crops.
 
-Perishable agriculture suffers from extreme uncertainty.
+---
 
-Farmers usually make harvest decisions without knowing:
+# 🚨 Problem Statement
 
-• Future market prices
-• Buyer demand
-• Logistics availability
-• Weather-adjusted harvest windows
+Perishable agriculture suffers from **extreme uncertainty**.
 
-This leads to three major problems:
+Farmers often make harvest decisions without knowing:
 
-1️⃣ Early Harvest
+* Future market prices
+* Buyer demand
+* Logistics availability
+* Weather-adjusted harvest windows
 
-Farmers harvest early due to fear of price drops → lower yield and profit
+This results in three major issues:
 
-2️⃣ Late Harvest
+### 1️⃣ Early Harvest
 
-Farmers wait too long expecting better prices → spoilage or market crashes
+Farmers harvest early due to fear of price drops → **lower yield and reduced profit**
 
-3️⃣ Distress Selling
+### 2️⃣ Late Harvest
 
-Without pre-harvest buyer coordination → farmers are forced to sell at low prices to middlemen
+Farmers delay harvest expecting higher prices → **spoilage or price crashes**
 
-Today there is no integrated digital system that connects:
+### 3️⃣ Distress Selling
 
-crop growth
+Without buyer coordination before harvest → farmers are forced to sell to middlemen at **low prices**
 
-weather signals
+Currently there is **no integrated system** that connects:
 
-price intelligence
+* crop planning
+* market demand
+* weather insights
+* price intelligence
+* logistics coordination
 
-buyer demand
+**before harvest happens.**
 
-logistics coordination
+---
 
-before harvest happens.
+# 💡 Solution
 
-💡 The Solution
+Vasudha introduces a **predictive pre-harvest digital supply chain platform**.
 
-Vasudha introduces a predictive pre-harvest supply chain platform.
+Instead of reacting after harvest, the system allows coordination **before crops leave the farm.**
 
-Instead of reacting after harvest, the system allows all participants to coordinate before the crop leaves the farm.
+Farmers get:
 
-Farmers receive:
+* Harvest window predictions
+* ML-based price forecasts
+* Profit estimation
+* Buyer commitments
 
-• Harvest window predictions
-• Expected price forecasts
-• Profit estimation
-• Buyer commitments
+Buyers get:
 
-Buyers receive:
+* Supply forecasting
+* Early reservation of produce
 
-• Supply forecasting
-• Pre-harvest reservation capability
+Logistics providers get:
 
-Logistics providers receive:
+* Shipment planning in advance
 
-• Early shipment planning
+This transforms farming from **reactive selling → predictive planning.**
 
-This transforms agriculture from reactive selling → predictive planning.
+---
 
-🧠 Core Intelligence Layer
+# 🧠 Core Intelligence Layer
 
-Vasudha combines data models and rule-based engines to guide agricultural decisions.
+Vasudha integrates rule-based engines with machine learning models.
 
-🌾 Crop Growth & Harvest Engine
+---
 
-This engine estimates the optimal harvest window using:
+## 🌾 Crop Growth & Harvest Engine
 
-crop growth cycles
+This engine predicts the **optimal harvest window** using:
 
-planting date
+* crop growth cycles
+* planting date
+* weather conditions
+* spoilage risk factors
 
-weather adjustments
+Outputs include:
 
-spoilage risk estimation
+* predicted harvest window
+* expected yield
+* crop risk score
 
-Output includes:
+---
 
-• predicted harvest window
-• expected yield
-• risk score
+## 📈 ML Price Prediction Model
 
-📈 ML Price Prediction Model
+To reduce price uncertainty, Vasudha uses a **machine learning regression model**.
 
-To reduce price uncertainty, Vasudha integrates a machine learning price prediction system.
+**Model Details**
 
-Model Details:
+* Algorithm: Random Forest Regressor
+* Framework: Scikit-learn
+* Training: Google Colab
+* Data: Historical agricultural market prices
 
-Algorithm: Random Forest Regressor
+Outputs:
 
-Training Data: Historical agricultural price datasets
+* predicted market price range
+* price volatility insights
 
-Framework: Scikit-learn
+Model accuracy is evaluated using **R² metrics**.
 
-Training Environment: Google Colab
+---
 
-Model outputs:
+## 💰 Profit Estimation Engine
 
-• expected market price range
-• price volatility insight
+The system estimates expected profit using:
 
-Performance is evaluated using R² metrics to ensure predictive reliability.
-
-💰 Profit Estimation Engine
-
-Profit is estimated using a combined model:
-
+```
 Expected Profit =
-Predicted Yield × ML Price Estimate − Cost Factors
+Predicted Yield × Predicted Price − Cost Factors
+```
 
-Farmers can see potential earnings before harvest, enabling better decisions.
+Farmers can see **profit estimates before harvest**, enabling better decisions.
 
-🔄 Digital Supply Chain Coordination Engine
+---
 
-The core innovation of Vasudha is its structured digital supply chain workflow.
+# 🔄 Digital Supply Chain Engine
 
-Unlike traditional marketplaces, Vasudha introduces state-controlled coordination logic.
+Vasudha introduces a **structured supply chain coordination workflow**.
 
-1️⃣ Demand-Supply Matching
+---
+
+## 1️⃣ Demand-Supply Matching
 
 The system automatically matches:
 
-farmer crop listings
-
-buyer demand requests
+* farmer crop listings
+* buyer demand requests
 
 Matching criteria include:
 
-• crop type
-• quantity
-• harvest window compatibility
-• regional availability
+* crop type
+* quantity
+* harvest window compatibility
+* region availability
 
-2️⃣ Commitment Workflow
+---
+
+## 2️⃣ Commitment Workflow
 
 Once a buyer finds a match:
 
 Buyer commits → Farmer accepts → Inventory locked
 
-This ensures:
+Benefits:
 
-• demand security for farmers
-• supply reservation for buyers
-• prevention of overselling
+* prevents overselling
+* secures buyer demand early
+* reduces post-harvest uncertainty
 
-3️⃣ Inventory Control System
+---
 
-Vasudha tracks inventory in real time.
+## 3️⃣ Inventory Control System
 
-Inventory states include:
+Tracks inventory in real time:
 
-Total Quantity
+* Total Quantity
+* Committed Quantity
+* Available Quantity
 
-Committed Quantity
+Supports:
 
-Available Quantity
+* primary crops
+* byproducts (example: coconut husk)
 
-Supported inventory types:
+---
 
-• primary crops
-• byproducts (example: coconut husk)
-
-This enables farmers to monetize secondary agricultural outputs.
-
-4️⃣ Shipment & Logistics Coordination
+## 4️⃣ Logistics Coordination
 
 After commitment approval:
 
-Shipment is automatically created
+1. Shipment is automatically created
+2. Logistics providers receive shipment request
+3. Transport is proposed
+4. Buyer approves shipment
+5. Delivery lifecycle is tracked
 
-Logistics providers receive shipment requests
+Each shipment follows a **state machine workflow**.
 
-Transport is proposed
+---
 
-Buyer approves shipment
+# 🌍 Multilingual Accessibility
 
-Delivery lifecycle is tracked
+Vasudha supports regional farmer accessibility.
 
-Each shipment follows a structured state machine ensuring supply chain consistency.
+Languages supported:
 
-🌍 Multilingual Accessibility
+* English
+* Hindi
+* Telugu
 
-Vasudha is designed for regional farmers.
+Implemented using **react-i18next**.
 
-Supported languages:
+---
 
-• English
-• Hindi
-• Telugu
+# 🔔 Event-Driven Notification System
 
-The entire UI dynamically switches using react-i18next, ensuring accessibility for local users.
+Automated email notifications are triggered when:
 
-🔔 Event-Driven Notification System
+* crop is finalized
+* commitment is created
+* commitment is accepted
+* shipment is approved
 
-To ensure transparency, automated notifications are triggered for key actions.
+This keeps all stakeholders informed in real time.
 
-Email alerts are sent when:
+---
 
-• crop is finalized
-• commitment is created
-• commitment is accepted
-• shipment is approved
+# 🏗 System Architecture
 
-This keeps all actors updated in real time.
+```
+                +----------------------+
+                |      Frontend        |
+                |  React + TypeScript  |
+                +----------+-----------+
+                           |
+                           | REST APIs
+                           |
+                +----------v-----------+
+                |       Backend        |
+                |       FastAPI        |
+                | Matching Engine      |
+                | Commitment Engine    |
+                | Shipment Workflow    |
+                +----------+-----------+
+                           |
+                           |
+                +----------v-----------+
+                |       Database       |
+                |  Firebase Firestore  |
+                +----------+-----------+
+                           |
+                           |
+                +----------v-----------+
+                |    ML Prediction     |
+                | Random Forest Model  |
+                | Price Forecasting    |
+                +----------------------+
+```
 
-🏗 System Architecture
-           ┌────────────────────────┐
-           │        Frontend        │
-           │   React + TypeScript   │
-           └──────────┬─────────────┘
-                      │ API Calls
-                      ▼
-           ┌────────────────────────┐
-           │        Backend         │
-           │        FastAPI         │
-           │  Supply Chain Engine   │
-           │  Matching Algorithms   │
-           │  Shipment State Logic  │
-           └──────────┬─────────────┘
-                      │
-                      ▼
-           ┌────────────────────────┐
-           │        Database        │
-           │   Firebase Firestore   │
-           └──────────┬─────────────┘
-                      │
-                      ▼
-           ┌────────────────────────┐
-           │     ML Prediction      │
-           │ Random Forest Model    │
-           │   Price Forecasting    │
-           └────────────────────────┘
-🧰 Tech Stack
-Frontend
+---
 
-React 18
+# 🧰 Tech Stack
 
-TypeScript
+### Frontend
 
-Vite
+* React 18
+* TypeScript
+* Vite
+* Recharts
+* react-i18next
 
-Recharts
+### Backend
 
-react-i18next
+* FastAPI
+* Python
+* REST APIs
+* Modular service architecture
 
-Backend
+### Database
 
-FastAPI
+* Firebase Firestore
+* Real-time document database
 
-Python
+### Authentication
 
-REST APIs
+* Firebase Authentication
+* Email / Password login
 
-Modular service architecture
+### Machine Learning
 
-Core modules include:
+* Python
+* Pandas
+* Scikit-learn
+* Random Forest Regressor
 
-• matching engine
-• commitment engine
-• shipment state machine
+### Notifications
 
-Database
+* SMTP Email Service
+* Gmail App Password integration
 
-Firebase Firestore
+---
 
-Features:
+# 👥 Platform Roles
 
-real-time updates
-
-scalable document database
-
-role-based data access
-
-Authentication
-
-Firebase Authentication
-
-email/password login
-
-role-based access
-
-User roles:
-
-• Farmer
-• Buyer
-• Logistics
-
-Machine Learning
-
-Python
-
-Pandas
-
-Scikit-learn
-
-Random Forest Regressor
-
-Model training done in Google Colab and integrated into backend services.
-
-Notifications
-
-Email alerts implemented using:
-
-SMTP + Gmail App Password
-
-👥 Platform Roles
-👨‍🌾 Farmer
+## 👨‍🌾 Farmer
 
 Capabilities:
 
-Crop planning
+* crop planning
+* harvest prediction
+* profit estimation
+* byproduct listing
+* commitment management
+* shipment tracking
 
-Harvest prediction
+---
 
-Profit estimation
-
-Byproduct listing
-
-Commitment acceptance
-
-Shipment tracking
-
-🏬 Buyer
+## 🏬 Buyer
 
 Capabilities:
 
-Demand posting
+* post demand requests
+* view matched farmers
+* create commitments
+* approve shipments
+* forecast incoming supply
 
-View matched farmers
+---
 
-Create commitments
-
-Approve shipments
-
-Forecast incoming supply
-
-🚚 Logistics
+## 🚚 Logistics Provider
 
 Capabilities:
 
-Receive shipment requests
+* receive shipment requests
+* propose transport routes
+* manage delivery lifecycle
+* update shipment status
 
-Propose transportation
+---
 
-Manage delivery lifecycle
+# ⚙️ Installation
 
-Update shipment states
+## 1️⃣ Clone Repository
 
-⚙️ Installation
-1️⃣ Clone Repository
-git clone https://github.com/YOUR_USERNAME/vasudha.git
-cd vasudha
-2️⃣ Backend Setup
+```
+git clone https://github.com/SathwikPrabhu-07/Vasudha.git
+cd Vasudha
+```
+
+---
+
+## 2️⃣ Backend Setup
+
+```
 cd backend
 pip install -r requirements.txt
+```
 
-Run server:
+Run backend server:
 
+```
 uvicorn main:app --reload
+```
 
 Backend runs on:
 
+```
 http://localhost:8000
-3️⃣ Frontend Setup
+```
+
+---
+
+## 3️⃣ Frontend Setup
+
+```
 cd frontend
 npm install
+```
 
 Run frontend:
 
+```
 npm run dev
+```
 
 Frontend runs on:
 
+```
 http://localhost:5173
-4️⃣ Configure Firebase
+```
 
-Create .env file with:
+---
 
+## 4️⃣ Firebase Configuration
+
+Create a `.env` file in frontend:
+
+```
 VITE_FIREBASE_API_KEY=
 VITE_FIREBASE_AUTH_DOMAIN=
 VITE_FIREBASE_PROJECT_ID=
 VITE_FIREBASE_STORAGE_BUCKET=
 VITE_FIREBASE_MESSAGING_SENDER_ID=
 VITE_FIREBASE_APP_ID=
-🚀 Usage Workflow
-Step 1 — Farmer Plans Crop
+```
+
+---
+
+# 🚀 Platform Workflow
+
+### Step 1 — Farmer Registers Crop
 
 Farmer enters crop details and planting date.
 
-Step 2 — System Predicts Harvest
+### Step 2 — Harvest Prediction
 
-Harvest engine predicts optimal harvest window.
+The system predicts the optimal harvest window.
 
-Step 3 — ML Predicts Price
+### Step 3 — Price Prediction
 
-ML model estimates expected market price.
+ML model forecasts expected market prices.
 
-Step 4 — Profit Estimation
+### Step 4 — Profit Estimation
 
-System shows estimated profit range.
+System calculates estimated profit range.
 
-Step 5 — Buyer Posts Demand
+### Step 5 — Buyer Posts Demand
 
-Buyer posts crop demand.
+Buyers publish crop demand requests.
 
-Step 6 — Matching Engine
+### Step 6 — Matching Engine
 
-System finds compatible farmers.
+Platform matches farmers with buyers.
 
-Step 7 — Commitment Creation
+### Step 7 — Commitment Creation
 
-Buyer commits → farmer accepts.
+Buyer commits → Farmer accepts → inventory locked.
 
-Inventory gets locked.
+### Step 8 — Shipment Creation
 
-Step 8 — Logistics Planning
+Shipment request sent to logistics providers.
 
-Shipment is created and transport is proposed.
+### Step 9 — Delivery Lifecycle
 
-Step 9 — Delivery Tracking
+Shipment is transported and delivery is completed.
 
-Shipment moves through lifecycle until delivery completion.
+---
 
-🎯 Key Innovations
+# 🎯 Key Innovations
 
-• Pre-harvest demand locking
-• ML-based agricultural price prediction
-• Supply chain state machine architecture
-• Byproduct monetization support
-• Multilingual farmer accessibility
-• Role-based supply chain coordination
+* Pre-harvest demand locking
+* ML-based agricultural price prediction
+* Supply chain state machine architecture
+* Byproduct monetization support
+* Multilingual farmer accessibility
+* Role-based coordination platform
 
-📊 Impact
+---
+
+# 📊 Impact
 
 Vasudha aims to:
 
-• reduce post-harvest waste
-• increase farmer bargaining power
-• stabilize income
-• improve supply chain transparency
-• digitize regional agricultural trade
+* reduce post-harvest waste
+* increase farmer bargaining power
+* stabilize farmer income
+* improve agricultural supply chain transparency
+* digitize local agricultural trade
 
-🧪 Future Improvements
+---
 
-Satellite-based crop monitoring
+# 🧪 Future Improvements
 
-AI yield prediction models
+* satellite crop monitoring
+* AI yield prediction
+* mandi price API integration
+* mobile app for farmers
+* cold-chain logistics integration
 
-Market demand forecasting
+---
 
-Integrated cold-chain logistics
-
-Mobile app for farmers
-
-Government mandi price integration
-
-🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome.
 
 Steps:
 
-Fork the repository
+```
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Submit a Pull Request
+```
 
-Create a feature branch
+---
 
-Commit changes
+# 📜 License
 
-Submit a pull request
+This project is licensed under the **MIT License**.
 
-📜 License
+---
 
-This project is licensed under the MIT License.
+# 🌾 Vision
 
-🏁 Project Vision
+Vasudha aims to create a future where farming decisions are guided by **data, coordination, and predictability**, rather than uncertainty.
 
-Vasudha aims to build a world where farming decisions are guided by data, coordination, and predictability rather than uncertainty.
+---
 
-By integrating intelligence, supply chain workflows, and accessibility, the platform moves agriculture toward a digitally coordinated ecosystem.
