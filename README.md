@@ -9,6 +9,11 @@ Vasudha is a full-stack agricultural coordination platform that helps farmers, b
 The platform combines **machine learning, supply chain workflows, and multilingual accessibility** to create a predictable digital ecosystem for perishable crops.
 
 ---
+## 🌐 Live Demo
+
+Try the deployed application here:
+
+👉 https://vasudha-navy.vercel.app/
 
 # 🚨 Problem Statement
 
